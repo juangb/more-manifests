@@ -10,3 +10,8 @@ kubectl config use-context kind-kind
 ## Install ArgoCD
 kubectl create namespace argocd
 kubectl apply -n argocd -f install.yaml
+kubectl apply -f cm-configmap.yml
+kubectl apply -f rbac-configmap.yml
+
+# Install ApplicationSet
+kubectl apply -f apps/builder-tools-applicationset-services.yml
