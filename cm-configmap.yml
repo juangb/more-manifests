@@ -4,6 +4,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: argocd-cm
+  namespace: argocd
   labels:
     owner: builder-tools
     app.kubernetes.io/part-of: argocd
