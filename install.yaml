@@ -15877,8 +15877,8 @@ spec:
               key: applicationsetcontroller.enable.progressive.syncs
               name: argocd-cmd-params-cm
               optional: true
-        image: quay.io/argoproj/argocd:v2.6.0
-        imagePullPolicy: Always
+        image: docker.io/library/argocd:fix-appset
+        imagePullPolicy: Never
         name: argocd-applicationset-controller
         ports:
         - containerPort: 7000
