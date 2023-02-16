@@ -1,8 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: anotherservice
-  namespace: anotherservice
+  name: anotherservice1
+  namespace: anotherservice1
   labels:
     app: nginx
 spec:
