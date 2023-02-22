@@ -12,9 +12,13 @@ kubectl create namespace argocd
 kubectl apply -n argocd -f install.yaml
 kubectl apply -f cm-configmap.yml -n argocd
 kubectl apply -f rbac-configmap.yml -n argocd
+kubectl apply -f cmd-params-cm.yml -n argocd
 
 # Install ApplicationSet
 kubectl apply -f apps/builder-tools-applicationset-services.yml
 
 # Load image to kind nodes
 kind load docker-image argocd:fix-appset-v2
+
+# Build docker
+docker build . --tag argocd:fix-appset-v2
