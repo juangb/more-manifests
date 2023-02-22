@@ -15877,7 +15877,7 @@ spec:
               key: applicationsetcontroller.enable.progressive.syncs
               name: argocd-cmd-params-cm
               optional: true
-        image: docker.io/library/argocd:fix-appset-v3
+        image: docker.io/library/argocd:fix-appset-v4
         imagePullPolicy: Never
         name: argocd-applicationset-controller
         ports:
