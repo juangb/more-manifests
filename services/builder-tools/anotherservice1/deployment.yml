@@ -5,6 +5,7 @@ metadata:
   namespace: anotherservice1 # This will cause those two apps to fight constantly for this resource
   labels:
     app: nginx
+    anotherlabel: testappset
 spec:
   replicas: 1
   selector:
