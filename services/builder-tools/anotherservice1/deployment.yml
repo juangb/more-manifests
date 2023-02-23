@@ -1,8 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: anotherservice1
-  namespace: anotherservice1 # This will cause those two apps to fight constantly for this resource
+  name: anotherservice
+  namespace: anotherservice # This will cause those two apps to fight constantly for this resource
   labels:
     app: nginx
 spec:
